@@ -14,7 +14,7 @@ public class Main {
 
 		Locale.setDefault(Locale.US);
 		Scanner sc = new Scanner(System.in);
-
+/**
 		String name;
 		int life, armor, damage;
 
@@ -43,14 +43,14 @@ public class Main {
 		System.out.println("Armadura : ");
 		armor = sc.nextInt();
 		Champion c2 = new Champion(name, life, damage, armor);
-
+*/
 		System.out.println("____________________________________________");
 		System.out.println("Quantos turnos você deseja executar?");
 		int qtd = sc.nextInt();
-//		Champion c1 = new Champion("DARIOS", 50, 8, 1);
+		Champion c1 = new Champion("DARIOS", 50, 8, 1);
 //		Champion c2 = new Champion("FIORA", 40, 10, 2);
 //	Champion c2 = new Champion("FIORA",40, 30, 10);
-//	Champion c2 = new Champion("FIORA",60, 20, 2);
+	Champion c2 = new Champion("FIORA",60, 20, 2);
 
 		int soma = 0, soma2 = 0;
 		if (qtd > 1) {
@@ -100,9 +100,8 @@ public class Main {
 		System.out.println("________________________________");
 		System.out.println("total de Damages");
 		System.out.println("________________________________");
-		System.out.println(c1.status());
-		System.out.println(c2.status());
-		c2.status();
+		System.out.println("Nome :"+c1.getName()+"  |"+c1.status());
+		System.out.println("Nome :"+c2.getName()+"  |"+c2.status());	
 		System.out.println("********************************");
 		System.out.println("       FIM DE COMBATE           ");
 		System.out.println("********************************");
